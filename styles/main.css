@@ -1,19 +1,11 @@
 @import "../styles/header.css";
 @import "../styles/body.css";
 @import "../styles/footer.css";
+@import "../styles/variables.css";
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;;
-}
-
-:root {
-    --black-general: #10323c; 
-    --dark-green: #5B8796;
-    --light-green: #94C5C9;
-    --light-yellow: #FBBE65;
-    --redish: #C35F45;
-    --light-white:#fffcf8; 
 }
