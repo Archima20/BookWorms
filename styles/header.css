@@ -1,0 +1,23 @@
+@import "../styles/variables.css";
+
+.box-nav{
+    background-color: var(--light-green);
+    padding-bottom: 2rem;
+}
+
+.box-search{
+    display: flex;
+    background-color: var(--light-white);
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+.img-logo{
+    width: 20rem;
+    padding: 2rem;
+}
+
+.img-search{
+    width: 2rem;
+}
