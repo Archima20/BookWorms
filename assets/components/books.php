@@ -43,70 +43,7 @@
     
     // Close connection
     unset($pdo);
-  ?>
-      <div href="#" class="group">
-        <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
-          <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1398034300i/5107.jpg" alt="Book one" class="h-full w-full object-cover object-center group-hover:opacity-75">
-        </div>
-        <h3 class="mt-4 text-sm text-gray-700">Title</h3>
-        <p class="mt-1 text-lg font-medium text-gray-900">Author</p>
-        <div class="box-btns">
-            <button class="btn-edit">
-                <img src="./assets/images/edit.png" alt="Edit button">  
-            </button>
-            <button class="btn-delete">
-                <img src="./assets/images/delete.png" alt="Delete button">
-            </button>
-        </div>
-      </div>
-
-    <div href="#" class="group">
-        <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
-          <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1642048349i/74537.jpg" alt="Book two" class="h-full w-full object-cover object-center group-hover:opacity-75">
-        </div>
-        <h3 class="mt-4 text-sm text-gray-700">Title</h3>
-        <p class="mt-1 text-lg font-medium text-gray-900">Author</p>
-        <div class="box-btns">
-            <button class="btn-edit">
-                <img src="./assets/images/edit.png" alt="Edit button">  
-            </button>
-            <button class="btn-delete">
-                <img src="./assets/images/delete.png" alt="Delete button">
-            </button>
-        </div>
-    </div>
-
-    <div href="#" class="group">
-        <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
-          <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1398034300i/5107.jpg" alt="Book one" class="h-full w-full object-cover object-center group-hover:opacity-75">
-        </div>
-        <h3 class="mt-4 text-sm text-gray-700">Title</h3>
-        <p class="mt-1 text-lg font-medium text-gray-900">Author</p>
-        <div class="box-btns">
-            <button class="btn-edit">
-                <img src="./assets/images/edit.png" alt="Edit button">  
-            </button>
-            <button class="btn-delete">
-                <img src="./assets/images/delete.png" alt="Delete button">
-            </button>
-        </div>
-    </div>
-
-    <div href="#" class="group">
-        <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
-          <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1642048349i/74537.jpg" alt="Book two" class="h-full w-full object-cover object-center group-hover:opacity-75">
-        </div>
-        <h3 class="mt-4 text-sm text-gray-700">Title</h3>
-        <p class="mt-1 text-lg font-medium text-gray-900">Author</p>
-        <div class="box-btns">
-            <button class="btn-edit">
-                <img src="./assets/images/edit.png" alt="Edit button">  
-            </button>
-            <button class="btn-delete">
-                <img src="./assets/images/delete.png" alt="Delete button">
-            </button>
-        </div>
-    </div>
+    ?>
       
     </div>
   </div>
