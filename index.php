@@ -15,7 +15,56 @@
   </head>
 <body>
   <?php include "./assets/components/header.php" ?>
-  <?php include "./assets/components/books.php" ?>
+  <?php
+    // Include config file
+    require_once "config.php";
+    
+    // Attempt select query execution
+    $sql = "SELECT * FROM books";
+    if($result = $pdo->query($sql)){
+        if($result->rowCount() > 0){
+            echo '<table class="table table-bordered table-striped">';
+                echo "<thead>";
+                    echo "<tr>";
+                        echo "<th>#</th>";
+                        echo "<th>Title</th>";
+                        echo "<th>Author</th>";
+                        echo "<th>ISBN</th>";
+                        echo "<th>Description</th>";
+                        echo "<th>Book Image URL</th>";
+                        echo "<th>Action</th>";
+                    echo "</tr>";
+                echo "</thead>";
+                echo "<tbody>";
+                while($row = $result->fetch()){
+                    echo "<tr>";
+                        echo "<td>" . $row['ID'] . "</td>";
+                        echo "<td>" . $row['title'] . "</td>";
+                        echo "<td>" . $row['author'] . "</td>";
+                        echo "<td>" . $row['ISBN'] . "</td>";
+                        echo "<td>" . $row['description'] . "</td>";
+                        echo "<td>" . $row['book_image'] . "</td>";
+                        echo "<td>";
+                        echo "<button class='btn-edit'> <img src='./assets/images/edit.png' alt='Edit button'></button>";
+                        echo "<button class='btn-delete'> <img src='./assets/images/delete.png' alt='Delete button'></button>";
+                        echo "</td>";
+                    echo "</tr>";
+                }
+                echo "</tbody>";                            
+            echo "</table>";
+            // Free result set
+            unset($result);
+        } else{
+            echo '<div class="alert alert-danger"><em>No records were found.</em></div>';
+        }
+    } else{
+        echo "Oops! Something went wrong. Please try again later.";
+    }
+    
+    // Close connection
+    unset($pdo);
+  ?>
+  <!-- ?php include "./assets/components/books.php" ?> -->
  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
