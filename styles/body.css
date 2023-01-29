@@ -1,6 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import "../styles/variables.css";
 
-.img-book{
-    width: 25%;
-    height: 25%;
+.img-book {
+  width: 25%;
+  height: 25%;
 }
