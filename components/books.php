@@ -17,8 +17,15 @@
     // Include config file
     require_once "config.php";
     
+    //https://www.sourcecodester.com/tutorials/php/13884/php-search-filter-using-pdo.html
     // Attempt select query execution
-    $sql = "SELECT * FROM books";
+    if(ISSET($_GET['search'])){
+        $keyword = $_GET['keyword'];
+        $sql = "select * from books where concat(title, author) like '%$keyword%'";
+    } else {
+        $sql = "SELECT * FROM books";
+    }
+
     if($result = $pdo->query($sql)){
         if($result->rowCount() > 0){
             while($row = $result->fetch()){

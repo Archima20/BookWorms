@@ -9,9 +9,12 @@
     display: flex;
     background-color: var(--light-white);
     width: 80%;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-left: 2rem;
+}
+.input-search {
+    width: 95%;
 }
 .img-logo{
     width: 20rem;
