@@ -1,18 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import "../styles/variables.css";
 
-.ctnr-create-book{
-    display: flex;
-    flex-direction: row;
-}
-.btn-create-book{
-    width: 20px;
-}
 .img-book{
     width: 25%;
     height: 25%;
-}
-
-#img-create-book{
-    width: 5%;
-    height: 5%;
 }
