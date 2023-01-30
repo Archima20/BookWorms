@@ -10,7 +10,7 @@
           <button class="btn-srch" type="submit">
             <img class="img-search" src="./assets/images/lupa.png" alt="Magnifier glass">
           </button>
-        </div>
+        </div>v
       </form>
     </nav>
 </body>

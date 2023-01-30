@@ -1,11 +1,12 @@
-@import "../styles/header.css";
-@import "../styles/body.css";
-@import "../styles/footer.css";
-@import "../styles/variables.css";
+@import "./header.css";
+@import "./body.css";
+@import "./footer.css";
+@import "./variables.css";
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;;
+    font-family: 'Inter', sans-serif;
+    font-weight:bold;
 }

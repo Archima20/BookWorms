@@ -1,5 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="./styles/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
 <div class="bg-white">
@@ -26,7 +32,7 @@
 
                     echo "<p>" . $row['author'] . "</p>";
                     echo "<h3>ISBN</h3><p>" . $row['ISBN'] . "</p>";
-                    echo "<h3>Description</h3><p>" . $row['description'] . "</p>";
+                    echo "<h3>Description</h3><p class = 'description'>" . $row['description'] . "</p>";
                     echo "<button class='btn-edit'> <img src='./assets/images/edit.png' alt='Edit button'></button>";
                     echo "<button class='btn-delete'> <img src='./assets/images/delete.png' alt='Delete button'></button>";
                 echo "</div>";
@@ -43,9 +49,10 @@
     
     // Close connection
     unset($pdo);
-    ?>
-      
+  ?>
+
     </div>
   </div>
 </div>
 </body>
+</html>
