@@ -4,6 +4,10 @@
 
 @import "../styles/variables.css";
 
+body{
+    width: 100vw;
+}
+
 .img-book{
     width: 25%;
     height: 25%;
