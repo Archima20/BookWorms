@@ -1,13 +1,3 @@
-@import "./variables.css";
-
 .box-nav {
   background: linear-gradient(180deg, #5b8796 27.31%, #94c5c9 100%);
-}
-
-.input-search {
-    width: 95%;
-}
-
-.img-search {
-  width: 2rem;
 }
