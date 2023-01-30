@@ -1,5 +1,3 @@
-<!--<?php include "calldb.php" ?>-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,8 +12,8 @@
     <link rel="stylesheet" href="./styles/main.css">
   </head>
 <body>
-  <?php include "./assets/components/header.php" ?>
-  <?php include "./assets/components/books.php" ?>
+  <?php include "./components/header.php" ?>
+  <?php include "./components/books.php" ?> 
  
 </body>
 </html>
