@@ -1,42 +1,24 @@
-<head>
-    <link rel="stylesheet" href="./styles/main.css">
-</head>
-<body>
 <form action="#" method="POST">
-        <div class="overflow-hidden shadow sm:rounded-md">
-          <div class="bg-white px-4 py-5 sm:p-6">
-            <div class="grid grid-cols-6 gap-6">
+  <div class = "w-screen p-5">
 
-              <div class="col-span-6 sm:col-span-3">
-                <input type="text" name="title" autofocus="autofocus" require="require" placeholder="Title" class="mt-1 block w-full rounded-md border-blue-500 border-solid p-2 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" >
-              </div>
+    <div class="grid gap-5 px-5">
 
-              <div class="col-span-6 sm:col-span-4">
-                <input type="text" name="authors" require="require" placeholder="Author" class="mt-1 block w-full rounded-md border-blue-500 border-solid p-2 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
-              </div>
+          <input type="text" name="title" autofocus="autofocus" require="require" placeholder="Title" class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 p-2 w-full" >
+  
+          <input type="text" name="authors" require="require" placeholder="Author" class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 p-2 w-full">
+     
+          <input type="text" name="isbn" require="require" placeholder="ISBN" class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 p-2 w-full">
+   
+          <input type="text" name="imageUrl"  require="require" placeholder="Image URL"  class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 p-2 w-full">
+       
+          <textarea rows="4" cols="1" type="text" name="description" require="require" placeholder="Description" class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 p-2 w-full"></textarea> 
+    </div>
 
-              <div class="col-span-6">
-                <input type="text" name="isbn" require="require" placeholder="ISBN" class="mt-1 block w-full rounded-md border-blue-500 border-solid p-2 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
-              </div>
+    <div class="flex gap-5 px-5 mt-5 mb-5 justify-between">
+      <a href="index.php" class="w-1/2 py-2 bg-red-600 text-white text-center justify-center rounded-md border border-transparent" >Cancel</a>
 
-              <div class="col-span-6 sm:col-span-6 lg:col-span-2">
-                <input type="text" name="imageUrl"  require="require" placeholder="Image URL"  class="mt-1 block w-full rounded-md border-blue-500 border-solid p-2 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
-              </div>
+      <button type="submit" class="w-1/2 py-2 bg-blue-600 text-white justify-center rounded-md border border-transparent" >Save</button>
+    </div>
 
-              <div class="col-span-6 sm:col-span-3 lg:col-span-2">
-                <textarea rows="4" cols="1" type="text" name="description" require="require" placeholder="Description" class="mt-1 block w-full rounded-md border-blue-500 border-solid p-2 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"></textarea> 
-
-              </div>
-            </div>
-          </div>
-          <div class="bg-gray-50 px-4 py-3 text-right sm:px-6">
-            <button type="submit" class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white border-solid hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Save</button>
-          </div>
-
-          <div class="bg-gray-50 px-4 py-3 text-right sm:px-6">
-            <a href="index.php" class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white border-solid hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Cancel</a>
-          </div>
-
-        </div>
-      </form>
-</body>
+  </div>
+</form>
