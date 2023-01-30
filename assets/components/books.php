@@ -1,10 +1,15 @@
 <head>
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/body.css">
 </head>
-<body>
+<body>  
+    <div class= "ctnr-create-book">
+        <button class="btn-create-book">
+            <img id = "img-create-book" src="./assets/images/addbook.png" alt="Create a new book button">
+            <p>Let's create a new book !</p>
+        </button>
+    </div>
 <div class="bg-white">
   <div class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-    <h2 class="sr-only">Books</h2>
     <div class="grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
       <div href="#" class="group">
         <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8">
