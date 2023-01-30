@@ -1,6 +1,7 @@
 @import "./header.css";
 @import "./body.css";
 @import "./variables.css";
+@import "./book.css";
 
 * {
   padding: 0;
