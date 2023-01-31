@@ -1,14 +1,11 @@
 <?php
 // Process delete operation after confirmation
 if(isset($_POST["id"]) && !empty($_POST["id"])){
-    echo $_POST["id"];
     // Include config file
     require_once "config.php";
     
     // Prepare a delete statement
     $sql = "DELETE FROM books WHERE id = :id";
-
-    echo $sql;
 
     if($stmt = $pdo->prepare($sql)){
         // Bind variables to the prepared statement as parameters
@@ -25,9 +22,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
         } else{
             echo "Oops! Something went wrong. Please try again later.";
         }
-    } else {
-        echo "sql not going";
-    }
+    } 
      
     // Close statement
     unset($stmt);
@@ -40,9 +35,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
         // URL doesn't contain id parameter. Redirect to error page
         header("location: index.php");
         exit();
-    } else {
-        echo "awaiting response";
-    }
+    } 
 }
 ?>
 
