@@ -3,8 +3,8 @@
 require_once "config.php";
  
 // Define variables and initialize with empty values
-$ID = $title = $author = $ISBN = $decription = $book_image ="";
-$ID_err = $title_err = $author_err = $ISBN_err = $decription_err = $book_image_err = "";
+$ID = $title = $author = $ISBN = $description = $book_image ="";
+$ID_err = $title_err = $author_err = $ISBN_err = $description_err = $book_image_err = "";
  
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
