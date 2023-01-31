@@ -64,19 +64,18 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
 </head>
 <body>
   <?php include "./components/header.php" ?>
-    <div href='#' class='display-box'>
-        <div class='aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8'>
-        <img src='<?php echo $row["book_image"]?>' alt='<?php echo $row["title"] ?>' class='h-50 w-full object-cover object-center group-hover:opacity-75'>
+    <div href='#' class="p-5 justify-center">
+        <div class='overflow-hidden rounded-r-2xl drop-shadow-lg my-6 mx-10'>
+        <img src='<?php echo $row["book_image"]?>' alt='<?php echo $row["title"] ?>' class='box-content'>
         </div>
-        <h3 class='mt-4 text-sm text-gray-700'>Title</h3>
-        <p><?php echo $row["title"]; ?></p>
-        <p class='mt-1 text-lg font-medium text-gray-900'>Author</p>
-
-        <p><?php echo $row["author"]; ?></p>
-        <h3>ISBN</h3><p><?php echo $row["ISBN"]; ?></p>
-        <h3>Description</h3><p><?php echo $row["description"]; ?></p>
-        <button class='btn-edit'> <img src='./assets/images/edit.png' alt='Edit button'></button>
-        <button class='btn-delete'> <img src='./assets/images/delete.png' alt='Delete button'></button>
+        <p class='font-sans text-lg font-bold pt-3'><?php echo $row["title"]; ?></p>
+        <p class='font-sans text-sm text-blue-600 pb-4'><?php echo $row["author"]; ?></p>
+        <p class="font-sans text-sm pb-4">ISBN <?php echo $row["ISBN"]; ?></p>
+        <p class="font-sans text-sm pb-10"><?php echo $row["description"]; ?></p>
+        <div class='flex gap-3 pb-10 mx-10'>
+            <button class='w-2/4 h-14 bg-orange-300 rounded-md flex items-center justify-center  hover:bg-orange-400'> <img src='./assets/images/edit.svg' alt='Edit button' class='h-8'></button>
+            <button class='w-2/4 h-14 bg-red-500 rounded-md flex items-center justify-center hover:bg-red-600'> <img src='./assets/images/delete.svg' alt='Delete button' class='h-8'></button>
+        </div>
     </div>
 </body>
 </html>
