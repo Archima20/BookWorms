@@ -33,7 +33,7 @@
                     echo "<h3>ISBN</h3><p>" . $row['ISBN'] . "</p>";
                     echo "<h3>Description</h3><p class = 'description'>" . $row['description'] . "</p>";
                     echo "<button class='btn-edit'> <img src='./assets/images/edit.png' alt='Edit button'></button>";
-                    echo "<button class='btn-delete'> <img src='./assets/images/delete.png' alt='Delete button'></button>";
+                    echo "<a class='btn-delete' href='./deletepage.php?id=". $row['id'] . "' title='Delete Book' data-toggle='tooltip'> <img src='./assets/images/delete.png' alt='Delete button'></a>";
                 echo "</div>";
             }                       
 
