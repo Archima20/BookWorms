@@ -53,22 +53,31 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Check input errors before inserting in database
     if(empty($title_err) && empty($author_err) && empty($ISBN_err) && empty($description_err) && empty($book_image_err)){
         // Prepare an insert statement
-        $sql = "INSERT INTO books (title, author, ISBN, description, book_image) VALUES (:title, :author, :ISBN, :description, :book_image)";
+        $sql = "INSERT INTO books (title, author, ISBN, description, book_image) VALUES ('" . $title . "', '" . $author . "', '" . $ISBN . "', '" . $description . "', '" . $book_image . "')";
+        ?>
+        
+        <h1>
+        <?php
+        echo $sql
+        ?>
+        </h1>
  
+        <?php
         if($stmt = $pdo->prepare($sql)){
             // Bind variables to the prepared statement as parameters
-            $stmt->bindParam(":title", $param_title);
-            $stmt->bindParam(":author", $param_author);
-            $stmt->bindParam(":ISBN", $param_ISBN);
-            $stmt->bindParam(":description", $param_description);
-            $stmt->bindParam(":book_image", $param_book_image);
+            
+            // $stmt->bindParam(":title", $param_title);
+            // $stmt->bindParam(":author", $param_author);
+            // $stmt->bindParam(":ISBN", $param_ISBN);
+            // $stmt->bindParam(":description", $param_description);
+            // $stmt->bindParam(":book_image", $param_book_image);
             
             // Set parameters
-            $param_title = $title;
-            $param_author = $author;
-            $param_ISBN = $ISBN;
-            $param_description = $description;
-            $param_book_image = $book_image;
+            // $param_title = $title;
+            // $param_author = $author;
+            // $param_ISBN = $ISBN;
+            // $param_description = $description;
+            // $param_book_image = $book_image;
             
             // Attempt to execute the prepared statement
             if($stmt->execute()){
