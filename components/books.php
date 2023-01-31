@@ -22,7 +22,7 @@
             while($row = $result->fetch()){
                 echo "<div href='#' class='group'>";
                     echo "<div class='aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8'>
-                    <a href='./displaypage.php?id=". $row['ID'] ."' class='mr-3' title='View Book' data-toggle='tooltip'>
+                    <a href='./displaypage.php?id=". $row['id'] ."' class='mr-3' title='View Book' data-toggle='tooltip'>
                     <img src='" . $row['book_image'] . "' alt='" . $row['title'] . "' class='h-full w-full object-cover object-center group-hover:opacity-75'>
                     </a></div>";
                     echo "<h3 class='mt-4 text-sm text-gray-700'>Title</h3>";

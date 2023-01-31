@@ -63,25 +63,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         </h1>
  
         <?php
-        if($stmt = $pdo->prepare($sql)){
-            // Bind variables to the prepared statement as parameters
-            
-            // $stmt->bindParam(":title", $param_title);
-            // $stmt->bindParam(":author", $param_author);
-            // $stmt->bindParam(":ISBN", $param_ISBN);
-            // $stmt->bindParam(":description", $param_description);
-            // $stmt->bindParam(":book_image", $param_book_image);
-            
-            // Set parameters
-            // $param_title = $title;
-            // $param_author = $author;
-            // $param_ISBN = $ISBN;
-            // $param_description = $description;
-            // $param_book_image = $book_image;
-            
+        if($stmt = $pdo->prepare($sql)){           
             // Attempt to execute the prepared statement
             if($stmt->execute()){
-                // Records created successfully. Redirect to landing page
+            // Records created successfully. Redirect to landing page
                 header("location: index.php");
                 exit();
             } else{
