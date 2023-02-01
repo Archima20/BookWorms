@@ -17,8 +17,7 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
         // Attempt to execute the prepared statement
         if($stmt->execute()){
             if($stmt->rowCount() == 1){
-                /* Fetch result row as an associative array. Since the result set
-                contains only one row, we don't need to use while loop */
+                /* Fetch result row as an associative array. Since the result set contains only one row, we don't need to use while loop */
                 $row = $stmt->fetch(PDO::FETCH_ASSOC);
                 
                 // Retrieve individual field value
@@ -29,8 +28,7 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
                 $book_image = $row["book_image"];
             } else{
                 // URL doesn't contain valid id parameter. Redirect to error page
-                header("location: error.php");
-                exit();
+                echo "There isn't a valid book reference.";
             }
             
         } else{
@@ -46,7 +44,7 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
 } else{
     // URL doesn't contain id parameter. Redirect to error page
     //header("location: error.php");
-    exit();
+    echo "There is an error.";
 }
 ?>
 
@@ -73,8 +71,9 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
         <p class="font-sans text-sm pb-4">ISBN <?php echo $row["ISBN"]; ?></p>
         <p class="font-sans text-sm pb-10"><?php echo $row["description"]; ?></p>
         <div class='flex gap-3 pb-10 mx-10'>
-            <button class='w-2/4 h-14 bg-orange-300 rounded-md flex items-center justify-center  hover:bg-orange-400'> <img src='./assets/images/edit.svg' alt='Edit button' class='h-8'></button>
-            <button class='w-2/4 h-14 bg-red-500 rounded-md flex items-center justify-center hover:bg-red-600'> <img src='./assets/images/delete.svg' alt='Delete button' class='h-8'></button>
+            <button title='Delete Book' data-toggle='tooltip' class='w-2/4 h-14 bg-orange-300 rounded-md flex items-center justify-center  hover:bg-orange-400'> <img src='./assets/images/edit.svg' alt='Edit button' class='h-8'></button>
+
+            <a href='deletepage.php?id=<?php echo $param_id ?>' class='w-2/4 h-14 bg-red-500 rounded-md flex items-center justify-center hover:bg-red-600'> <img src='./assets/images/delete.svg' alt='Delete button' class='h-8'></a>
         </div>
     </div>
 </body>
