@@ -17,5 +17,3 @@ Una biblioteca para proyecto FemCoders
 *[Tools used](#tecnologías-utilizadas)
 
 *[Authors](#personas-contribuyentes)
-
-*[Personas-Desarrolladores del Proyecto](#personas-desarrolladores)
