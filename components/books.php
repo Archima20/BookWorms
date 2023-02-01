@@ -1,7 +1,4 @@
-
-<div class="bg-white">
-  <div class="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-    <h2 class="sr-only">Books</h2>
+<div class="max-w-2xl pt-4 pb-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
 
     <?php
@@ -20,20 +17,19 @@
     if($result = $pdo->query($sql)){
         if($result->rowCount() > 0){
             while($row = $result->fetch()){
-                echo "<div href='#' class='group'>";
-                    echo "<div class='aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-w-7 xl:aspect-h-8'>
-                    <a href='./displaypage.php?id=". $row['id'] ."' class='mr-3' title='View Book' data-toggle='tooltip'>
-                    <img src='" . $row['book_image'] . "' alt='" . $row['title'] . "' class='h-full w-full object-cover object-center group-hover:opacity-75'>
-                    </a></div>";
-                    echo "<h3 class='mt-4 text-sm text-gray-700'>Title</h3>";
-                    echo "<p>" . $row['title'] . "</p>";
-                    echo "<p class='mt-1 text-lg font-medium text-gray-900'>Author</p>";
-
-                    echo "<p>" . $row['author'] . "</p>";
-                    echo "<h3>ISBN</h3><p>" . $row['ISBN'] . "</p>";
-                    echo "<h3>Description</h3><p class = 'description'>" . $row['description'] . "</p>";
-                    echo "<button class='btn-edit'> <img src='./assets/images/edit.png' alt='Edit button'></button>";
-                    echo "<button class='btn-delete'> <img src='./assets/images/delete.png' alt='Delete button'></button>";
+                echo "<div href='#' >";
+                    echo "<div class='aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-r-2xl drop-shadow-lg lg:aspect-w-7 lg:aspect-h-8'>
+                        <a href='./displaypage.php?id=". $row['id'] ."' title='View Book' data-toggle='tooltip'>
+                            <img src='" . $row['book_image'] . "' alt='" . $row['title'] . "' class=' hover:opacity-75'>
+                        </a>
+                    </div>";
+                    echo "<p class='font-sans text-base font-bold pt-3' >" . $row['title'] . "</p>";
+                    echo "<p class='font-sans text-xs text-blue-600 pb-3'>" . $row['author'] . "</p>";
+                    echo "<div href='#' class='flex gap-3' >";
+                        echo "<button class='w-2/4 bg-orange-300 rounded-md flex items-center justify-center h-10 hover:bg-orange-400'> <img src='./assets/images/edit.svg' alt='Edit button' class='w-6'></button>";
+                        
+                        echo "<a class='w-2/4 bg-red-500 rounded-md flex items-center justify-center h-10 hover:bg-red-600' href='./deletepage.php?id=". $row['id'] . "' title='Delete Book' data-toggle='tooltip'> <img src='./assets/images/delete.svg' alt='Delete button' class='h-6'></a>";
+                    echo "</div>";
                 echo "</div>";
             }                       
 
@@ -51,5 +47,4 @@
   ?>
 
     </div>
-  </div>
 </div>

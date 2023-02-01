@@ -6,16 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="sweetalert2.all.min.js"></script>
-    <link rel="stylesheet" href="sweetalert2.min.css">
-    <title>Bookworms library</title>
+    <title>Delete Book</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
-  </head>
+</head>
 <body>
   <?php include "./components/header.php" ?>
-  <?php include "./components/create_button.php" ?>
-  <?php include "./components/books.php" ?> 
+  <?php include "./components/delete.php" ?>
+
 </body>
 </html>
