@@ -1,15 +1,15 @@
 # BookWorms
 
-Una biblioteca para proyecto FemCoders
+:closed_book: Una biblioteca para proyecto FemCoders
 
 ## table of contents
 
-1. [Description of the project](#Description_of_the_project)
-2. [State of the project](#state)
-3. [Characteristics and screenshots of the project](#characteristics)
-4. [Access to the project](#tools)
-5. [Tools used](#tools)
-6. [Authors](#tools)
+1. [Description of the project](#Description-of-the-project)
+2. [State of the project](#State-of-the-project)
+3. [Characteristics and screenshots of the project](#Characteristics)
+4. [Access to the project](#Access)
+5. [Tools used](#Tools-used)
+6. [Authors](#Authors)
 
 ## Description of the project
 ***
