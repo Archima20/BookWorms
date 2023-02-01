@@ -13,7 +13,7 @@
 
 ## Description of the project
 ***
-Using PHP as a back end language and MySql as a database, we have to do a CRUD (Create, Read, Update and Delete) of books.
+Using PHP as a back end language and MySql as a database, we have to do a CRUD (Create, Read, Update and Delete) of books with a few fields foer each book.
 ***
 The main fields used for each book (or register) are:
 * ID
@@ -21,8 +21,9 @@ The main fields used for each book (or register) are:
 * Author (authors)
 * ISBN
 * Description
-### Screenshot
-![screenshot](./assets/images/bookspage.png "Animation that shows auto completion")
+### Main Page
+![Main page](./assets/images/bookspage.png "Main page look and feel")
+![Create page](./assets/images/createbook.png "Create page look and feel")
 
 ## State of the project
 ***
