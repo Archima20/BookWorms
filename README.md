@@ -2,7 +2,7 @@
 
 :closed_book: Library (Biblioteca) project for FemCoders promotion. CRUD PHP project using MySql database.
 
-## table of contents
+## Table of contents
 
 1. [Description of the project](#Description-of-the-project)
 2. [State of the project](#State-of-the-project)
@@ -22,6 +22,7 @@ The main fields used for each book (or register) are:
 * ISBN
 * Description
 ### Screenshot
+!(/assets/images/bookspage.png?raw=true )
 ![Image text](/path/to/the/screenshot.png)
 
 ## State of the project
