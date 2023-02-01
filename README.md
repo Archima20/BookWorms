@@ -11,19 +11,37 @@ Una biblioteca para proyecto FemCoders
 5. [Tools used](#tools)
 6. [Authors](#tools)
 
-## description
+## Description
 ***
 Write down the general informations of your project. It is worth to always put a project status in the Readme file. This is where you can add it. 
 ### Screenshot
 ![Image text](/path/to/the/screenshot.png)
 
-## state
+## State of the project
 ***
 Write down the general informations of your project. It is worth to always put a project status in the Readme file. This is where you can add it. 
 ### Screenshot
 ![Image text](/path/to/the/screenshot.png)
 
-## characteristics
+## Characteristics and screenshots
+***
+Write down the general informations of your project. It is worth to always put a project status in the Readme file. This is where you can add it. 
+### Screenshot
+![Image text](/path/to/the/screenshot.png)
+
+## Access
+***
+Write down the general informations of your project. It is worth to always put a project status in the Readme file. This is where you can add it. 
+### Screenshot
+![Image text](/path/to/the/screenshot.png)
+
+## Tools
+***
+Write down the general informations of your project. It is worth to always put a project status in the Readme file. This is where you can add it. 
+### Screenshot
+![Image text](/path/to/the/screenshot.png)
+
+## Authors
 ***
 Write down the general informations of your project. It is worth to always put a project status in the Readme file. This is where you can add it. 
 ### Screenshot
