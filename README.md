@@ -4,16 +4,8 @@ Una biblioteca para proyecto FemCoders
 
 ## Indice
 
-\*[Title and image](#Title-and-image)
-
-\*[Description of the project](#descripción-del-proyecto)
-
-\*[State of the project](#Estado-del-proyecto)
-
-\*[Characteristics and screenshoots of the project](#Características-de-la-aplicación-y-demostración)
-
-\*[Access to the project](#acceso-proyecto)
-
-\*[Tools used](#tecnologías-utilizadas)
-
-\*[Authors](#personas-contribuyentes)
+1. [General Info](#general-info)
+2. [Technologies](#technologies)
+3. [Installation](#installation)
+4. [Collaboration](#collaboration)
+5. [FAQs](#faqs)
