@@ -4,14 +4,14 @@ Una biblioteca para proyecto FemCoders
 
 ## table of contents
 
-1. [Description of the project ](#description)
+1. [Description of the project](#description)
 2. [State of the project](#state)
 3. [Characteristics and screenshots of the project](#characteristics)
 4. [Access to the project](#tools)
 5. [Tools used](#tools)
 6. [Authors](#tools)
 
-## Description
+## Description of the project
 ***
 Write down the general informations of your project. It is worth to always put a project status in the Readme file. This is where you can add it. 
 ### Screenshot
@@ -23,19 +23,19 @@ Write down the general informations of your project. It is worth to always put a
 ### Screenshot
 ![Image text](/path/to/the/screenshot.png)
 
-## Characteristics and screenshots
+## Characteristics and screenshots of the project
 ***
 Write down the general informations of your project. It is worth to always put a project status in the Readme file. This is where you can add it. 
 ### Screenshot
 ![Image text](/path/to/the/screenshot.png)
 
-## Access
+## Access to the project
 ***
 Write down the general informations of your project. It is worth to always put a project status in the Readme file. This is where you can add it. 
 ### Screenshot
 ![Image text](/path/to/the/screenshot.png)
 
-## Tools
+## Tools used
 ***
 Write down the general informations of your project. It is worth to always put a project status in the Readme file. This is where you can add it. 
 ### Screenshot
