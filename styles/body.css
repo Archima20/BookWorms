@@ -4,19 +4,7 @@
 
 @import "./variables.css";
 @import "./main.css";
-body{
-    width: 100vw;
-}
 
-
-.img-book{
-    width: 25%;
-    height: 25%;
+body {
+  width: 100vw;
 }
-.description {
-    font:bold;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-  }
