@@ -1,3 +1,8 @@
+<head>
+    <script src="sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+</head>
+
 <?php
 // Include config file
 require_once "config.php";
@@ -54,21 +59,23 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(empty($title_err) && empty($author_err) && empty($ISBN_err) && empty($description_err) && empty($book_image_err)){
         // Prepare an insert statement
         $sql = "INSERT INTO books (title, author, ISBN, description, book_image) VALUES ('" . $title . "', '" . $author . "', '" . $ISBN . "', '" . $description . "', '" . $book_image . "')";
-        ?>
-        
-        <h1>
-        <?php
-        echo $sql
-        ?>
-        </h1>
- 
-        <?php
         if($stmt = $pdo->prepare($sql)){           
             // Attempt to execute the prepared statement
             if($stmt->execute()){
             // Records created successfully. Redirect to landing page
                 header("location: index.php");
-                exit();
+                //exit();
+                ?>
+                <script>
+                    Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'Your work has been saved',
+                    showConfirmButton: false,
+                    timer: 1500
+                    })
+                </script>
+            <?php
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
             }
