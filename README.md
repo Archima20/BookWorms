@@ -2,26 +2,20 @@
 Una biblioteca para proyecto FemCoders
 ##Índice
 
-*[Título e imagen de portada](#Título-e-imagen-de-portada)
-
-*[Insignias](#insignias)
+*[Title and image](#Title-and-image)
 
 *[Índice](#índice)
 
-*[Descripción del proyecto](#descripción-del-proyecto)
+*[Description of the project](#descripción-del-proyecto)
 
-*[Estado del proyecto](#Estado-del-proyecto)
+*[State of the project](#Estado-del-proyecto)
 
-*[Características de la aplicación y demostración](#Características-de-la-aplicación-y-demostración)
+*[Characteristics and screenshoots of the app](#Características-de-la-aplicación-y-demostración)
 
-*[Acceso al proyecto](#acceso-proyecto)
+*[Access to the project](#acceso-proyecto)
 
-*[Tecnologías utilizadas](#tecnologías-utilizadas)
+*[Tools used](#tecnologías-utilizadas)
 
-*[Personas Contribuyentes](#personas-contribuyentes)
+*[Authors](#personas-contribuyentes)
 
 *[Personas-Desarrolladores del Proyecto](#personas-desarrolladores)
-
-* [Licencia](#licencia)
-
-*[Conclusión](#conclusión)
