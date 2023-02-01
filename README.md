@@ -22,8 +22,7 @@ The main fields used for each book (or register) are:
 * ISBN
 * Description
 ### Screenshot
-!(/assets/images/bookspage.png?raw=true )
-![Image text](/path/to/the/screenshot.png)
+![screenshot](./assets/images/bookspage.png "Animation that shows auto completion")
 
 ## State of the project
 ***
