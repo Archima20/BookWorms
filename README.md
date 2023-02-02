@@ -20,21 +20,17 @@ Using PHP as a backend language and MySql as a database, we applied CRUD (Create
 * Cover image
 * Description
 ***
-
-### Main Page
-![Main page](./assets/images/bookspage.png "Main page look and feel")
-
 ## Characteristics and screenshots of the project
 ***
-Display all books.
+### Display all books.
 ![Display page](./assets/images/bookspage.png "Display page look and feel")
-Create a book.
+### Create a book.
 ![Create page](./assets/images/createbook.png "Create page look and feel")
-Delete a  book. 
+### Delete a  book. 
 ![Delete page](./assets/images/deletebook.png "Delete page look and feel")
-Update a book. 
+### Update a book. 
 ![Update page]("Update page look and feel")
-
+***
 ## Access to the project
 ***
 Write down the general informations of your project. It is worth to always put a project status in the Readme file. This is where you can add it. 
