@@ -102,11 +102,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       <div class="grid gap-5">
           <input type="text" name="title" autofocus="autofocus" required placeholder="Title" class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full">
           
-          <input type="text" name="author" required placeholder="Author" class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full" pattern="[A-Z]+[a-z]" title="Please use letters, spaces OR hyphens (-) Only">
+          <input type="text" name="author" required placeholder="Author" class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full" title="Please use letters, spaces OR hyphens (-) only">
           
-          <input type="number" name="ISBN" required placeholder="ISBN" class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full" pattern = "[0-9]+([-\,][0-9]+)?" title="Please use numbers and hyphens (-) Only">
+          <input type="text" name="ISBN" required placeholder="ISBN" class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full" title="Please use numbers and hyphens (-) Only">
 
-          <input type="text" name="book_image"  required placeholder="Image URL"  class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full" pattern="https?://.+" title="Pleaase include http://">
+          <input type="text" name="book_image" required placeholder="Image URL"  class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full" pattern="https?://.+" title="Please include http://">
 
           <textarea rows="4" cols="1" type="text" name="description" required placeholder="Description" class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full"></textarea> 
       </div>
