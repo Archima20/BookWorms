@@ -37,17 +37,24 @@ The steps to have acces to the project are:
 ![Database and table](./assets/images/database-table.png "Database and table required")
 2. Have Xampp or Mamp intalled and have Apache and MySql turned on.
 ![Apache and MySQL](./assets/images/apache-mysql.png "Apache and my SQL required")
-3. 
+3. Go to localhost in the navigator (Chrome recomended) and select the folder where the project is dowloaded (Bookworms folder).
+![Localhost](./assets/images/localhost.png"Localhost")
+4. The main page is displayed.
+![Apache and MySQL](./assets/images/bookspage.png "Main page")
 
-## Tools used
+## Demo
 ***
-Write down the general informations of your project. It is worth to always put a project status in the Readme file. This is where you can add it. 
+Gif demo 
 
 ## Authors
 ***
-* Cristina - Developer Rockstar
-* Gabriela - Scrum Master
-* Po - Developer Rockstar
-* Shima - Product Owner
+####  Cristina - Developer Rockstar
+* https://github.com/Crisktina
+#### Gabriela - Scrum Master
+* https://github.com/gabrielabarajas
+#### Po - Developer Rockstar
+* https://github.com/pohengchan
+#### Shima - Product Owner
+* https://github.com/Archima20
 ### Screenshot
 ![Image text](/path/to/the/screenshot.png)
