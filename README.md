@@ -32,16 +32,20 @@ Using PHP as a backend language and MySql as a database, we applied CRUD (Create
 ![UpdateOne page](./assets/images/Update-two.png "Update page look and feel")
 ## Access to the project
 ***
-Write down the general informations of your project. It is worth to always put a project status in the Readme file. This is where you can add it. 
+The steps to have acces to the project are:
+1. Have SQL database called Bookworms with a table named Books.
+![UpdateOne page](./assets/images/database-table.png"Update page look and feel")
+2. 
+
 ## Tools used
 ***
 Write down the general informations of your project. It is worth to always put a project status in the Readme file. This is where you can add it. 
 
 ## Authors
 ***
-Cristina
-Gabriela
-Po
-Shima 
+* Cristina - Developer Rockstar
+* Gabriela - Scrum Master
+* Po - Developer Rockstar
+* Shima - Product Owner
 ### Screenshot
 ![Image text](/path/to/the/screenshot.png)
