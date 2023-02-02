@@ -176,15 +176,15 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 
       <div class="grid gap-5">
 
-            <input type="text" name="title" autofocus="autofocus" require="require" placeholder="Title" value="<?php echo $title; ?>" class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full text-blue-600" >
+            <input type="text" name="title" autofocus="autofocus" require="require" placeholder="Title" value="<?php echo $title; ?>" class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full text-blue-600" title= "Please type the TITLE of the book.">
     
-            <input type="text" name="author" require="require" placeholder="Author" value="<?php echo $author; ?>"  class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full text-blue-600">
+            <input type="text" name="author" require="require" placeholder="Author" value="<?php echo $author; ?>"  class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full text-blue-600" pattern="[A-Za-z.\-]+" title= "Please type a valid name for the AUTHOR of the book. Letters and hyphen only.">
       
-            <input type="text" name="ISBN" require="require" placeholder="ISBN" value="<?php echo $ISBN; ?>" class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full text-blue-600">
+            <input type="text" name="ISBN" require="require" placeholder="ISBN" value="<?php echo $ISBN; ?>" class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full text-blue-600" pattern="[0-9.\-]+" title= "Please type a valid ISBN of the book. Numbers and hyphen only.">
     
-            <input type="text" name="book_image"  require="require" placeholder="Image URL" value="<?php echo $book_image; ?>"  class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full text-blue-600">
+            <input type="text" name="book_image"  require="require" placeholder="Image URL" value="<?php echo $book_image; ?>"  class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full text-blue-600" pattern="https?://.+" title="Please type the URL of the image, include http://">
         
-            <textarea rows="4" cols="1" type="text" name="description" require="require" placeholder="Description" class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full text-blue-600"><?php echo $description; ?></textarea> 
+            <textarea rows="4" cols="1" type="text" name="description" require="require" placeholder="Description" class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full text-blue-600" title="Please type a DESCRIPTION of the book."><?php echo $description; ?></textarea> 
       </div>
       <input type="hidden" name="id" value="<?php echo $id; ?>"/>
       <div class="flex gap-5 mt-5 mb-5 justify-between">
