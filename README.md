@@ -28,8 +28,8 @@ Using PHP as a backend language and MySql as a database, we applied CRUD (Create
 #### Delete a  book. 
 ![Delete page](./assets/images/deletebook.png "Delete page look and feel")
 #### Update a book. 
-![Update page](./assets/images/Update-one.png"Update page look and feel")
-![Update page](./assets/images/Update-two.png"Update page look and feel")
+![UpdateOne page](./assets/images/Update-one.png"Update page look and feel")
+![UpdateTwo page](./assets/images/Update-two.png"Update page look and feel")
 ## Access to the project
 ***
 Write down the general informations of your project. It is worth to always put a project status in the Readme file. This is where you can add it. 
