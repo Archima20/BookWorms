@@ -34,12 +34,20 @@ Using PHP as a backend language and MySql as a database, we applied CRUD (Create
 ***
 The steps to have acces to the project are:
 1. Have SQL database called Bookworms with a table named Books.
+
+
 ![Database and table](./assets/images/database-table.png "Database and table required")
 2. Have Xampp or Mamp intalled and have Apache and MySql turned on.
+
+
 ![Apache and MySQL](./assets/images/apache-mysql.png "Apache and my SQL required")
 3. Go to localhost in the navigator (Chrome recomended) and select the folder where the project is dowloaded (Bookworms folder).
+
+
 ![Localhost](./assets/images/localhost.png "Localhost")
 4. The main page is displayed.
+
+
 ![Apache and MySQL](./assets/images/bookspage.png "Main page")
 
 ## Demo
