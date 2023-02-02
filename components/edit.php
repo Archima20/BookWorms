@@ -168,8 +168,9 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
     <div class="bg-red-600 py-0.5 rounded-md"></div>
   </div>
 
-  <img src="<?php echo $book_image; ?>" alt="<?php echo $title; ?>"> 
-  <!-- falta poner la imagen correspondiente al libro que se esta editando -->
+  <div class='w-52 mt-3 mb-9 overflow-hidden rounded-r-2xl drop-shadow-lg lg:w-72'>
+    <img src="<?php echo $book_image; ?>" alt="<?php echo $title; ?>" class=""> 
+  </div>
 
   <form action="<?php echo htmlspecialchars(basename($_SERVER['REQUEST_URI'])); ?>" method="POST" class = "mt-2 w-5/6">
 
