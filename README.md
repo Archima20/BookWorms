@@ -34,8 +34,10 @@ Using PHP as a backend language and MySql as a database, we applied CRUD (Create
 ***
 The steps to have acces to the project are:
 1. Have SQL database called Bookworms with a table named Books.
-![UpdateOne page](./assets/images/database-table.png "Update page look and feel")
-2. 
+![Database and table](./assets/images/database-table.png "Database and table required")
+2. Have Xampp or Mamp intalled and have Apache and MySql turned on.
+![Apache and MySQL](./assets/images/apache-mysql.png "Apache and my SQL required")
+3. 
 
 ## Tools used
 ***
