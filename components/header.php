@@ -1,5 +1,5 @@
-<nav class="box-nav p-5">
-  <div class="flex justify-between items-center mb-4">
+<nav class="box-nav p-5 lg:p-10">
+  <div class="flex justify-between items-center mb-4 lg:mb-6">
      <a href="/BookWorms"><img src="./assets/images/logo.svg" alt="Logo"></a>
     <a href="/BookWorms"><img src="./assets/images/casita.png" alt="Logo"></a>
   </div>

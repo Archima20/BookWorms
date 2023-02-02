@@ -62,19 +62,23 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
 </head>
 <body>
   <?php include "./components/header.php" ?>
-    <div href='#' class="p-5 justify-center">
-        <div class='overflow-hidden rounded-r-2xl drop-shadow-lg my-6 mx-10'>
-        <img src='<?php echo $row["book_image"]?>' alt='<?php echo $row["title"] ?>' class='box-content'>
+  <div class="flex flex-col place-content-center items-center">
+    <div href='#' class="p-5 flex flex-col justify-center items-center  lg:p-10 lg:w-3/4">
+        <div class='flex  overflow-hidden rounded-r-2xl drop-shadow-lg my-6 lg:w-72 '>
+        <img src='<?php echo $row["book_image"]?>' alt='<?php echo $row["title"] ?>' class='box-content '>
         </div>
+        <div class="w-full">
         <p class='font-sans text-lg font-bold pt-3'><?php echo $row["title"]; ?></p>
         <p class='font-sans text-sm text-blue-600 pb-4'><?php echo $row["author"]; ?></p>
         <p class="font-sans text-sm pb-4">ISBN <?php echo $row["ISBN"]; ?></p>
         <p class="font-sans text-sm pb-10"><?php echo $row["description"]; ?></p>
-        <div class='flex gap-3 pb-10 mx-10'>
+        </div>
+        <div class='flex w-full gap-3 pb-10'>
             <button title='Delete Book' data-toggle='tooltip' class='w-2/4 h-14 bg-orange-300 rounded-md flex items-center justify-center  hover:bg-orange-400'> <img src='./assets/images/edit.svg' alt='Edit button' class='h-8'></button>
 
             <a href='deletepage.php?id=<?php echo $param_id ?>' class='w-2/4 h-14 bg-red-500 rounded-md flex items-center justify-center hover:bg-red-600'> <img src='./assets/images/delete.svg' alt='Delete button' class='h-8'></a>
         </div>
+    </div>
     </div>
 </body>
 </html>
