@@ -4,5 +4,8 @@
   },
   "scripts": {
     "build": "postcss css/tailwind.css -o assets/styles/body.css"
+  },
+  "dependencies": {
+    "sweetalert2": "^11.7.1"
   }
 }
