@@ -28,7 +28,8 @@ Using PHP as a backend language and MySql as a database, we applied CRUD (Create
 #### Delete a  book. 
 ![Delete page](./assets/images/deletebook.png "Delete page look and feel")
 #### Update a book. 
-![UpdateOne page](./assets/images/Update-one.png"Update page look and feel")
+![Delete page](./assets/images/deletebook.png "Delete page look and feel")
+![UpdateOne page](./assets/images/Update-one.png "Update page look and feel")
 
 ## Access to the project
 ***
