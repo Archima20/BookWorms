@@ -19,7 +19,6 @@ Using PHP as a backend language and MySql as a database, we applied CRUD (Create
 * ISBN
 * Cover image
 * Description
-***
 ## Characteristics and screenshots of the project
 ***
 ### Display all books.
