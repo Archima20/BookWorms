@@ -1,4 +1,4 @@
-<div class="max-w-2xl pt-4 pb-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+<div class="max-w-2xl pt-4 pb-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8 ">
     <div class="grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
 
     <?php
@@ -18,7 +18,7 @@
         if($result->rowCount() > 0){
             while($row = $result->fetch()){
                 echo "<div href='#' >";
-                    echo "<div class='aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-r-2xl drop-shadow-lg lg:aspect-w-7 lg:aspect-h-8'>
+                    echo "<div class='aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-r-2xl drop-shadow-lg lg:w-64'>
                         <a href='./displaypage.php?id=". $row['id'] ."' title='View Book' data-toggle='tooltip'>
                             <img src='" . $row['book_image'] . "' alt='" . $row['title'] . "' class=' hover:opacity-75'>
                         </a>
