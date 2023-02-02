@@ -74,7 +74,7 @@ if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
         <p class="font-sans text-sm pb-10"><?php echo $row["description"]; ?></p>
         </div>
         <div class='flex w-full gap-3 pb-10'>
-            <button title='Delete Book' data-toggle='tooltip' class='w-2/4 h-14 bg-orange-300 rounded-md flex items-center justify-center  hover:bg-orange-400'> <img src='./assets/images/edit.svg' alt='Edit button' class='h-8'></button>
+            <a title='Edit Book' class='w-2/4 h-14 bg-orange-300 rounded-md flex items-center justify-center  hover:bg-orange-400' href='editpage.php?id=<?php echo $param_id?>' > <img src='./assets/images/edit.svg' alt='Edit button' class='h-8'></a>
 
             <a href='deletepage.php?id=<?php echo $param_id ?>' class='w-2/4 h-14 bg-red-500 rounded-md flex items-center justify-center hover:bg-red-600'> <img src='./assets/images/delete.svg' alt='Delete button' class='h-8'></a>
         </div>
