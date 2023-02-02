@@ -56,5 +56,3 @@ Gif demo
 * https://github.com/pohengchan
 #### Shima - Product Owner
 * https://github.com/Archima20
-### Screenshot
-![Image text](/path/to/the/screenshot.png)
