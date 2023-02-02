@@ -26,7 +26,7 @@
                     echo "<p class='font-sans text-base font-bold pt-3' >" . $row['title'] . "</p>";
                     echo "<p class='font-sans text-xs text-blue-600 pb-3'>" . $row['author'] . "</p>";
                     echo "<div href='#' class='flex gap-3' >";
-                        echo "<button class='w-2/4 bg-orange-300 rounded-md flex items-center justify-center h-10 hover:bg-orange-400' title='Edit Book'> <img src='./assets/images/edit.svg' alt='Edit button' class='w-6'></button>";
+                        echo "<a class='w-2/4 bg-orange-300 rounded-md flex items-center justify-center h-10 hover:bg-orange-400' href='./editpage.php?id=". $row['id'] . "' title='Edit Book'> <img src='./assets/images/edit.svg' alt='Edit button' class='w-6'></a>";
                         
                         echo "<a class='w-2/4 bg-red-500 rounded-md flex items-center justify-center h-10 hover:bg-red-600' href='./deletepage.php?id=". $row['id'] . "' title='Delete Book' data-toggle='tooltip'> <img src='./assets/images/delete.svg' alt='Delete button' class='h-6'></a>";
                     echo "</div>";

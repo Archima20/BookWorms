@@ -59,6 +59,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(empty($title_err) && empty($author_err) && empty($ISBN_err) && empty($description_err) && empty($book_image_err)){
         // Prepare an insert statement
         $sql = "INSERT INTO books (title, author, ISBN, description, book_image) VALUES ('" . $title . "', '" . $author . "', '" . $ISBN . "', '" . $description . "', '" . $book_image . "')";
+        
         if($stmt = $pdo->prepare($sql)){           
             // Attempt to execute the prepared statement
             if($stmt->execute()){
