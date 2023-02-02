@@ -100,11 +100,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
   <form action="#" method="POST" class = "mt-2 w-5/6">
       <div class="grid gap-5">
-          <input type="text" name="title" autofocus="autofocus" required placeholder="Title" class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full">
+          <input type="text" name="title" autofocus="autofocus" required placeholder="Title" class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full" title="Please fill in with the TITLE of the book">
           
-          <input type="text" name="author" required placeholder="Author" class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full" title="Please use letters, spaces OR hyphens (-) only">
+          <input type="text" name="author" required placeholder="Author" class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full" pattern="[A-Za-z\._-]]{100}" title="Please fill in with the AUTHOR of the book (letters, spaces OR hyphens (-) only)">
           
-          <input type="text" name="ISBN" required placeholder="ISBN" class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full" title="Please use numbers and hyphens (-) Only">
+          <input type="number" name="ISBN" required placeholder="ISBN" class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full" pattern="[0-9\._-]]{100}" title="Please use numbers and hyphens (-) Only">
 
           <input type="text" name="book_image" required placeholder="Image URL"  class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full" pattern="https?://.+" title="Please include http://">
 
