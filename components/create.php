@@ -1,7 +1,3 @@
-<head>
-    <script src="sweetalert2.all.min.js"></script>
-    <link rel="stylesheet" href="sweetalert2.min.css">
-</head>
 
 <?php
 // Include config file
@@ -64,16 +60,18 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             // Attempt to execute the prepared statement
             if($stmt->execute()){
             // Records created successfully. Redirect to landing page
-                header("location: index.php");
-                //exit();
                 ?>
                 <script>
-                    Swal.fire({
+                    swal.fire({
                     position: 'top-end',
                     icon: 'success',
-                    title: 'Your work has been saved',
-                    showConfirmButton: false,
-                    timer: 1500
+                    title: 'Success!',
+                    text: 'Your book has been saved.',
+                    type: 'success',
+                    }).then(function (result) {
+                    if (true) {
+                        window.location = "index.php";
+                    }
                     })
                 </script>
             <?php
