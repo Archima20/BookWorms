@@ -44,7 +44,7 @@ The steps to have acces to the project are:
 
 ## Demo
 ***
-Gif demo 
+![Demo](./assets/images/bookwormsdemo.gif "Demo")
 
 ## Authors
 ***
