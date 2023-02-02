@@ -5,15 +5,14 @@
 ## Table of contents
 
 1. [Description of the project](#Description-of-the-project)
-2. [State of the project](#State-of-the-project)
-3. [Characteristics and screenshots of the project](#Characteristics)
-4. [Access to the project](#Access)
-5. [Tools used](#Tools-used)
-6. [Authors](#Authors)
+2. [Characteristics and screenshots of the project](#Characteristics)
+3. [Access to the project](#Access)
+4. [Tools used](#Tools-used)
+5. [Authors](#Authors)
 
 ## Description of the project
 ***
-Using PHP as a back end language and MySql as a database, we have to do a CRUD (Create, Read, Update and Delete) of books with a few fields foer each book.
+Using PHP as a backend language and MySql as a database, we have to do a CRUD (Create, Read, Update and Delete) of books with a few fields foer each book.
 ***
 The main fields used for each book (or register) are:
 * ID
@@ -24,12 +23,6 @@ The main fields used for each book (or register) are:
 ### Main Page
 ![Main page](./assets/images/bookspage.png "Main page look and feel")
 ![Create page](./assets/images/createbook.png "Create page look and feel")
-
-## State of the project
-***
-Write down the general informations of your project. It is worth to always put a project status in the Readme file. This is where you can add it. 
-### Screenshot
-![Image text](/path/to/the/screenshot.png)
 
 ## Characteristics and screenshots of the project
 ***
