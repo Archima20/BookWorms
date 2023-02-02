@@ -1,4 +1,4 @@
-<div class="my-6 px-4 ">
+<div class="my-6 px-4 lg:px-10">
     <a class="flex justify-between mb-1.5" href="./createpage.php">
         <div class="flex">
             <img src="./assets/images/icon_book.svg" alt="Book icon" class="mr-2">
