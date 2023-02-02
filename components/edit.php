@@ -186,7 +186,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
         
             <textarea rows="4" cols="1" type="text" name="description" require="require" placeholder="Description" class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full text-blue-600"><?php echo $description; ?></textarea> 
       </div>
-      <input type="hidden" name="id" value="<?php echo $id; ?>"/>
+      <input type="hidden" name="id" value="<?php echo $id ?>"/>
       <div class="flex gap-5 mt-5 mb-5 justify-between">
         <a href="index.php" class="w-1/2 py-2 bg-red-600 text-white text-sm text-center justify-center rounded-md border border-transparent" >Cancel</a>
 
