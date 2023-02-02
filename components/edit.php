@@ -83,9 +83,21 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
             
             // Attempt to execute the prepared statement
             if($stmt->execute()){
-                // Records updated successfully. Redirect to landing page
-                header("location: index.php");
-                exit();
+                ?>
+                <script>
+                    swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'Success!',
+                    text: 'Your book has been updated.',
+                    type: 'success',
+                    }).then(function (result) {
+                    if (true) {
+                        window.location = "index.php";
+                    }
+                    })
+                </script>
+            <?php
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
             }
@@ -177,7 +189,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
       <div class="flex gap-5 mt-5 mb-5 justify-between">
         <a href="index.php" class="w-1/2 py-2 bg-red-600 text-white text-sm text-center justify-center rounded-md border border-transparent" >Cancel</a>
 
-        <input type="submit" value="Save" class="w-1/2 py-2 bg-blue-600 text-white text-sm justify-center rounded-md border border-transparent" >
+        <button type="submit" class="w-1/2 py-2 bg-blue-600 text-white text-sm justify-center rounded-md border border-transparent" >Save</button>
       </div>
 
   </form>
