@@ -2,11 +2,8 @@
     <div class="grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-3 lg:grid-cols-4 lg:gap-y-14 lg:gap-x-12">
 
     <?php
-    // Include config file
     require_once "config.php";
     
-    //https://www.sourcecodester.com/tutorials/php/13884/php-search-filter-using-pdo.html
-    // Attempt select query execution
     if(ISSET($_GET['search'])){
         $keyword = $_GET['keyword'];
         $sql = "select * from books where concat(title, author) like '%$keyword%'";
@@ -42,9 +39,8 @@
         echo "Oops! Something went wrong. Please try again later.";
     }
     
-    // Close connection
     unset($pdo);
-  ?>
+    ?>
 
     </div>
 </div>

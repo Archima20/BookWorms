@@ -1,17 +1,13 @@
 <?php
-// Include config file
 require_once "config.php";
  
-// Define variables and initialize with empty values
 $title = $author = $ISBN = $description = $book_image ="";
 $title_err = $author_err = $ISBN_err = $description_err = $book_image_err = "";
  
-// Processing form data when form is submitted
 if(isset($_POST["id"]) && !empty($_POST["id"])){
-    // Get hidden input value
+
     $id = $_POST["id"];
     
-    // Validate title
     $input_title = trim($_POST["title"]);
     if(empty($input_title)){
         $title_err = "Please enter a title.";     
@@ -19,7 +15,6 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
         $title = $input_title;
     }
 
-    // Validate author
     $input_author = trim($_POST["author"]);
     if(empty($input_author)){
         $author_err = "Please enter an author.";
@@ -29,7 +24,6 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
         $author = $input_author;
     }
 
-    // Validate ISBN
     $input_ISBN = trim($_POST["ISBN"]);
     if(empty($input_ISBN)){
         $ISBN_err = "Please enter a ISBN.";     
@@ -37,7 +31,6 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
         $ISBN = $input_ISBN;
     }
 
-    // Validate description
     $input_description = trim($_POST["description"]);
     if(empty($input_description)){
         $description_err = "Please enter a description.";     
@@ -45,7 +38,6 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
         $description = $input_description;
     }
 
-    // Validate book_image
     $input_book_image = trim($_POST["book_image"]);
     if(empty($input_book_image)){
         $book_image_err = "Please enter a book image.";     
@@ -53,19 +45,12 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
         $book_image = $input_book_image;
     }
     
-
-    
-    // Check input errors before inserting in database
     if(empty($title_err) && empty($author_err) && empty($ISBN_err) && empty($description_err) && empty($book_image_err)){
 
-        // Prepare an update statement
         $sql = "UPDATE books SET title=:title, author=:author, ISBN=:ISBN, description=:description, book_image=:book_image
         WHERE id=:id";
 
-
-
         if($stmt = $pdo->prepare($sql)){
-            // Bind variables to the prepared statement as parameters
             $stmt->bindParam(":title", $param_title);
             $stmt->bindParam(":author", $param_author);
             $stmt->bindParam(":ISBN", $param_ISBN);
@@ -73,7 +58,6 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
             $stmt->bindParam(":book_image", $param_book_image);
             $stmt->bindParam(":id", $param_id);
             
-            // Set parameters
             $param_title = $title;
             $param_author = $author;
             $param_ISBN = $ISBN;
@@ -81,7 +65,6 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
             $param_book_image = $book_image;
             $param_id = $id;
             
-            // Attempt to execute the prepared statement
             if($stmt->execute()){
                 ?>
                 <script>
@@ -103,41 +86,31 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
             }
         }
          
-        // Close statement
         unset($stmt);
     }
     
-    // Close connection
     unset($pdo);
 } else{
-    // Check existence of id parameter before processing further
     if(isset($_GET["id"]) && !empty(trim($_GET["id"]))){
-        // Get URL parameter
         $id =  trim($_GET["id"]);
         
-        // Prepare a select statement
         $sql = "SELECT * FROM books WHERE id = :id";
         if($stmt = $pdo->prepare($sql)){
-            // Bind variables to the prepared statement as parameters
             $stmt->bindParam(":id", $param_id);
             
-            // Set parameters
             $param_id = $id;
             
-            // Attempt to execute the prepared statement
             if($stmt->execute()){
                 if($stmt->rowCount() == 1){
-                    /* Fetch result row as an associative array. Since the result set contains only one row, we don't need to use while loop */
+                    
                     $row = $stmt->fetch(PDO::FETCH_ASSOC);
                 
-                    // Retrieve individual field value
                     $title = $row["title"];
                     $author = $row["author"];
                     $ISBN = $row["ISBN"];
                     $description = $row["description"];
                     $book_image = $row["book_image"];
                 } else{
-                    // URL doesn't contain valid id. Redirect to error page
                     echo "More than one book is attempting to be changed";
                 }
                 
@@ -146,13 +119,9 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
             }
         }
         
-        // Close statement
         unset($stmt);
-        
-        // Close connection
         unset($pdo);
     }  else{
-        // URL doesn't contain id parameter. Redirect to error page
         echo "Oops! Something went wrong. Please try again later.";
     }
 }

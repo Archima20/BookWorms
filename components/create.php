@@ -1,15 +1,10 @@
-
 <?php
-// Include config file
 require_once "config.php";
  
-// Define variables and initialize with empty values
 $ID = $title = $author = $ISBN = $description = $book_image ="";
 $ID_err = $title_err = $author_err = $ISBN_err = $description_err = $book_image_err = "";
  
-// Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-    // Validate title
     $input_title = trim($_POST["title"]);
     if(empty($input_title)){
         $title_err = "Please enter a title for the book.";     
@@ -17,7 +12,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $title = $input_title;
     }
 
-    // Validate author
     $input_author = trim($_POST["author"]);
     if(empty($input_author)){
         $author_err = "Please enter an author for the book.";
@@ -27,7 +21,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $author = $input_author;
     }
     
-    // Validate ISBN
     $input_ISBN = trim($_POST["ISBN"]);
     if(empty($input_ISBN)){
         $ISBN_err = "Please enter an ISBN.";     
@@ -35,7 +28,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $ISBN = $input_ISBN;
     }
     
-    // Validate description
     $input_description = trim($_POST["description"]);
     if(empty($input_description)){
         $description_err = "Please enter a description.";     
@@ -43,7 +35,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $description = $input_description;
     }
 
-    // Validate book image
     $input_book_image = trim($_POST["book_image"]);
     if(empty($input_book_image)){
         $book_image_err = "Please enter an URL for the image.";     
@@ -51,15 +42,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $book_image = $input_book_image;
     }
     
-    // Check input errors before inserting in database
     if(empty($title_err) && empty($author_err) && empty($ISBN_err) && empty($description_err) && empty($book_image_err)){
-        // Prepare an insert statement
+
         $sql = "INSERT INTO books (title, author, ISBN, description, book_image) VALUES ('" . $title . "', '" . $author . "', '" . $ISBN . "', '" . $description . "', '" . $book_image . "')";
         
         if($stmt = $pdo->prepare($sql)){           
-            // Attempt to execute the prepared statement
             if($stmt->execute()){
-            // Records created successfully. Redirect to landing page
                 ?>
                 <script>
                     swal.fire({
@@ -80,11 +68,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             }
         }
          
-        // Close statement
         unset($stmt);
     }
     
-    // Close connection
     unset($pdo);
 }
 ?>
