@@ -102,7 +102,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       <div class="grid gap-5">
           <input required type="text" name="title" autofocus="autofocus" placeholder="Title" class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full" title= "Please type the TITLE of the book." >
 
-          <input required type="text" name="author" placeholder="Author" class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full" pattern="[A-Za-z.\-]+" title= "Please type a valid name for the AUTHOR of the book. Letters and hyphen only.">
+          <input required type="text" name="author" placeholder="Author" class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full" title= "Please type a valid name for the AUTHOR of the book.">
           
           <input required type="text" name="ISBN" placeholder="ISBN" class="border border-solid border-blue-600 bg-yellow-50 rounded-md placeholder:text-blue-400 placeholder:text-sm placeholder:font-bold placeholder:font-sans p-2 w-full" pattern="[0-9\-]+"- title= "Please type a valid ISBN of the book. Numbers and hyphen only.">
           
